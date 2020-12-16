@@ -1,0 +1,19 @@
+{
+  "name": "wacustica",
+  "version": "0.1.0",
+  "description": "pagina web de wacustica",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "live": "live-server"
+  },
+  "keywords": [
+    "dj",
+    "wacustica",
+    "audio",
+    "video",
+    "iluminacion"
+  ],
+  "author": "Omar Maldonado Villanueva",
+  "license": "MIT"
+}

@@ -1,0 +1,344 @@
+/* boton para abrir modal */
+.cotiza {
+    width: 80px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+  }
+  
+  .cotiza:hover {
+    width: 90px;
+  }
+  
+  /* modal para oscurecer pantalla */
+  .falso-modal {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #000000ad;
+      display: none;
+      z-index: 1;
+    }
+    
+    /* contenedero de consola y todos sus elementos */
+    .cotizacion {
+      width: 1100px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+      /* border: 1px solid white; */
+      color: white;
+      z-index: 1;
+    }
+    
+    /* imagen de la consola */
+    .consola {
+      width: 100%;
+    }
+  
+    /* imagen de consola para el cel */
+    .consola-cel {
+      width: 100%;
+      display: none
+    }
+    
+    /* disco */
+    .disco {
+      position: absolute;
+      bottom: 12%;
+      right: 7%;
+      width: 36%;
+      transition: transform 5s;
+    }
+    
+    /* forma para mensaje de cotizacion */
+    .cotizacion form {
+      position: absolute;
+      top: 21%;
+      left: 12%;
+      width: 40%;
+      height: 53%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      z-index: 1;
+      /* border: 1px solid white; */
+      padding: 2%;
+      box-sizing: border-box;
+    }
+    
+    .cotizacion form h1 {
+      text-align: center;
+      margin: 0;
+      font-family: 'factor';
+    }
+    
+    .cotizacion form label {
+      font-family: "sky";
+      font-weight: 200;
+    }
+    
+    .cotizacion form input{
+      width: 100%;
+      border-radius: 5px;
+      outline: none;
+    }
+    
+    .cotizacion form textarea {
+      height: 28%;
+      width: 100%;
+      border-radius: 5px;
+      outline: none;
+    }
+    
+    .cotizacion .sbmt-btn {
+      position: absolute;
+      right: 20%;
+      top: 23%;
+      padding: 1.5%;
+      border-radius: 15px;
+      /* background: linear-gradient(65deg, rgb(44, 43, 43), rgb(199, 199, 199),rgb(122, 121, 121),rgb(53, 52, 52)); */
+      background: linear-gradient(90deg, #9e853e, #d2c08c, #75622e, #a48a40, #bda358, #7b6730);
+      color: black;
+      cursor: pointer;
+      box-shadow: 5px 10px 10px black;
+      font-family: 'factor'; 
+      font-weight: bolder;  
+      outline: none;  
+    }
+
+    .cotizacion .sbmt-btn-cel {
+      display: none;
+      position: absolute;
+      right: 45%;
+      top: 66%;
+      padding: 4%;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #9e853e, #d2c08c, #75622e, #a48a40, #bda358, #7b6730);
+      color: black;
+      cursor: pointer;
+      box-shadow: 5px 10px 10px black;
+      font-family: 'factor';
+      font-size: 2.6vw; 
+      font-weight: bolder;  
+      outline: none;
+    }
+  
+    .aguja-lscape {
+      position: absolute;
+      top: 35%;
+      right: 1%;
+      width: 26%;
+      transform: rotate(57deg);
+    }
+  
+    .aguja-girada-lscape {
+      position: absolute;
+      top: 37%;
+      right: 6%;
+      width: 26%;
+      transform: rotate(90deg);
+      transition: 2s;
+    }
+
+    .aguja-lscape-cel {
+      position: absolute;
+      top: 69%;
+      right: 15%;
+      width: 33%;
+      transform: rotate(8deg);
+      display: none;
+    }
+
+    .aguja-lscape-cel-girada {
+      position: absolute;
+      top: 75%;
+      right: 23%;
+      width: 33%;
+      transform: rotate(73deg);
+      transition: 2s;
+    }
+  
+    .barra {
+      -webkit-appearance: none;
+      position: absolute;
+      left: 7%;
+      width: 48%;
+      height: 1%;
+      background-color: gray;
+      border-radius: 5px;
+      outline: none;
+    }
+  
+    .barra-funcional {
+      bottom: 21%;
+    }
+  
+    .barra-juguete {
+      bottom: 12%;
+    }
+    
+    .barra::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 35px;
+      background-color: black;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .notita {
+      position: absolute;
+      left: 22%;
+      bottom: 26%;
+      width: 20%;
+      background-color: #ffff00d1;
+      color: black;
+      display: none;
+      border-radius: 5px;
+      padding: 0 1%;
+      font-family: 'sky';
+      z-index: 1;
+    }
+
+    .cotiza-cel {
+        width: 84px;
+        display: none;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+  
+    @media only screen and (max-width:1200px){
+   
+      .cotizacion {
+        width: 80%;
+      }
+    
+      .cotizacion form h1 {
+        font-size: 2.5vw;
+      }
+  
+      .cotizacion form label {
+        font-size: 1.3vw;
+      }
+  
+      .cotizacion button {
+        font-size: 1.3vw;
+      }
+
+      .barra::-webkit-slider-thumb {
+        width: 1.5vw;
+        height: 2.5vw;
+      }
+
+      .notita {
+        font-size: 1.2vw;
+      }
+    }
+    
+    @media only screen and (max-width:560px){
+
+      .cotiza-cel {
+        display: block;
+      }
+
+      .cotiza {
+          display: none;
+      }
+      
+      .consola {
+        display: none;
+      }
+  
+      .consola-cel {
+        display: block;
+      }
+
+      .cotizacion {
+        width: 90%;
+      }
+      
+      .cotizacion form {
+        top: 12%;
+        left: 50%;
+        width: 90%;
+        height: 47%;
+        padding: 0 2%;
+        transform: translateX(-50%);
+      }
+  
+      .disco {
+        bottom: 7%;
+        right: 6%;
+        width: 40%;
+      }
+  
+      .cotizacion form h1 {
+        font-size: 4vw;
+      }
+  
+      .cotizacion form label {
+        font-size: 2.6vw;
+      }
+  
+      .cotizacion form input {
+        width: 95%;
+      }
+
+      .cotizacion form textarea {
+        height: 15%;
+        width: 95%;
+      }
+
+      .barra {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 2%;
+      }
+
+      .barra::-webkit-slider-thumb {
+        width: 4vw;
+        height: 8vw;
+      }
+
+      .barra-juguete {
+        display: none;
+      }
+
+      .barra-funcional {
+        bottom: 36%;
+      }
+
+      .notita {
+        width: 48%;
+        bottom: 41%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3vw;
+        padding: 0 3%;
+      }
+
+      .cotizacion .sbmt-btn {
+        display: none;
+      }
+
+      .cotizacion .sbmt-btn-cel {
+        display: block;
+      }
+
+      .aguja-lscape {
+        display: none;
+      }
+
+      .aguja-lscape-cel {
+        display: block;
+      }
+    }

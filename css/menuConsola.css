@@ -1,0 +1,194 @@
+.consolota {
+    max-width: 1000px;
+    /* border: 1px solid red; */
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+.consola-dj {
+    width: 100%;
+}
+
+.consola-dj-celular {
+    width: 100%;
+    display: none;
+}
+
+.menu-container {
+    width: 37%;
+    height: 37%;
+    /* border: 1px solid white; */
+    position: absolute;
+    bottom: 21%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu-item {
+    width: 43%;
+    height: 43%;
+    position: absolute;
+    /* background-color: #efe4e4; */
+    background-image: radial-gradient(white, #a19090);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+    /* border: 1px solid blue; */
+}
+
+.menu-item:hover {
+    background-image: none;
+    background-color: white;
+    width: 45%;
+    height: 45%;
+    box-shadow: 0px 0px 18px greenyellow;
+}
+
+.menu-item span {
+    color: black;
+    font-family: 'sky';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.audio {
+    top: 0;
+    left: 0;
+}
+
+.video {
+    top: 0;
+    right: 0;
+}
+
+.iluminacion {
+    bottom: 0;
+    left: 0;
+}
+
+.dj {
+    bottom: 0;
+    right: 0;
+}
+
+.menu-container-cel {
+    display: none;
+    width: 85%;
+    height: 25%;
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.menu-item-cel {
+    width: 43%;
+    height: 43%;
+    position: absolute;
+    /* background-color: #efe4e4; */
+    background-image: radial-gradient(white, #a19090);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+    /* border: 1px solid blue; */
+}
+
+.menu-item-cel span {
+    color: black;
+    font-family: 'sky';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4.5vw;
+}
+
+.disc {
+    width: 25%;
+    position: absolute;
+    bottom: 17%;    
+    transition: transform 2s;
+}
+
+.disc-left {
+    left: 4%;
+}
+
+.disc-rigth {
+    right: 4%;
+}
+
+.palanquita {
+    -webkit-appearance: none;
+    position: absolute;
+    left: 3%;
+    top: 38%;
+    width: 25%;
+    height: 1%;
+    background: #d8bbbb;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px yellowgreen;
+}
+
+.palanquita::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 25px;
+    background: black;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  @media only screen and (max-width:1100px) {
+    .menu-item span {
+        font-size: 2vw;
+    }
+
+    .palanquita::-webkit-slider-thumb {
+        width: 1.5vw;
+        height: 2.5vw;
+    }
+
+  }
+
+  @media only screen and (max-width:560px) {
+      .consola-dj {
+          display: none;
+      }
+
+      .consola-dj-celular {
+          display: block;
+      }
+
+      .palanquita {
+        top: 43%;
+        left: 31%;
+        width: 37%;
+        transform: rotate(90deg);
+      }
+
+      .palanquita::-webkit-slider-thumb {
+        width: 3.5vw;
+        height: 5.5vw;
+        border-radius: 2px;
+      }
+
+      .disc {
+          bottom: 48%;
+          width: 40%;
+      }
+
+      .menu-container {
+          display: none;
+      }
+
+      .menu-container-cel {
+          display: block;
+      }
+  }

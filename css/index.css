@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(65deg, rgb(100, 99, 99), rgb(223, 222, 222),rgb(158, 157, 157),rgb(129, 129, 129));
+    height: 100vh;
+}
+
+.separacion {
+    height: 30px;
+}

@@ -1,0 +1,46 @@
+.sm {
+    width: 95px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 2;
+}
+
+.sm:hover {
+    width: 100px;
+}
+
+.sm-button {
+    width: 70px;
+    position: fixed;
+    bottom: 50px;
+    right: 61px;
+    transition: right 2s;
+    z-index: 1;
+}
+
+.sm-button:hover {
+    width: 75px;
+}
+
+.sm-cel {
+    display: none;
+    background-color: black;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+.sm-cel img {
+    width: 60px;
+}
+
+@media only screen and (max-width:700px) {
+    .sm, .sm-button {
+        display: none;
+    }
+
+    .sm-cel {
+        display: flex;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizacion</title>
+    <link rel="stylesheet" href="./cotizacion.css">
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+</head>
+<body>
+    <!-- Cotizacion -->
+
+    <!-- boton cotizacion para celular -->
+    <img class="cotiza-cel" src="https://i.ibb.co/k9KHx3Z/cotizadorado.png" alt="" onclick="abrirModal()">
+
+    <!-- boton para modal cotizacion -->
+    <img src="https://i.ibb.co/k9KHx3Z/cotizadorado.png" class="cotiza" onclick="abrirModal()">
+
+    <!-- modal cotizacion -->
+    <div class="falso-modal" id="fake-modal" onclick="cerrarModal()"></div>
+    <div class="cotizacion" id="cotiza">
+        <img class="consola" src="https://i.ibb.co/nPsNKPm/consola-land.png" alt="" onclick="cerrarModal()">
+        <img class="consola-cel" src="https://i.ibb.co/ws8PxWV/consola-cel.png" alt="" onclick="cerrarModal()">
+        <form action="">
+            <h1>CONTACTO</h1>
+            <label for="nombre">NOMBRE COMPLETO</label>
+            <input type="text" name="nombre" id="">
+            <label for="mail">CORREO ELECTRÓNICO</label>
+            <input type="email" name="mail" id="">
+            <label for="message">MENSAJE</label>
+            <textarea name="message" id=""></textarea>
+        </form>  
+        <img class="disco" id="disco" src="https://i.ibb.co/qygQBDK/discoo.png" alt="" onclick="cerrarModal()"> 
+        <!-- aguja landscape -->
+        <img class="aguja-lscape" id="aguja" src="https://i.ibb.co/VmTtRxN/agujaderecha-aguja.png" alt="">
+        <!-- aguja cel -->
+        <img class="aguja-lscape-cel" id="aguja-cel" src="https://i.ibb.co/VmTtRxN/agujaderecha-aguja.png" alt="">        
+        <!-- submit button landscape -->
+        <button class="sbmt-btn" type="button" onclick="girarDisco()">SUBMIT</button>
+        <!-- submit button para cel -->
+        <button class="sbmt-btn-cel" type="button" onclick="girarDiscoCel()">SUBMIT</button>
+        <input class="barra barra-funcional" type="range" min="50" max="500" id="barra1">  
+        <input class="barra barra-juguete" type="range">
+        <div class="notita">
+            <p>Personas: <span id="numero-personas"></span></p>
+        </div>  
+    </div>
+
+    <!-- scripts -->
+    <script src="./cotizacion.js"></script>
+</body>
+</html>

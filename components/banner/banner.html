@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner</title>
+    <link rel="stylesheet" href="./banner.css">
+</head>
+<body>
+    <!-- Banner -->
+<div class="banner">
+    <div class="slides fade">
+        <img class="diapos" src="https://i.ibb.co/h70gwXd/pexels-isabella-mendes-860707.jpg">
+      </div>
+      <div class="slides fade">
+        <img class="diapos" src="https://i.ibb.co/zs1tHxP/pexels-pixabay-417458.jpg">
+      </div>            
+      <div class="slides fade">
+        <img class="diapos" src="https://images.pexels.com/photos/63703/pexels-photo-63703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+      </div>
+      <div class="slides fade">
+          <img class="diapos" src="https://i.ibb.co/SfggFtv/bocinas.png">
+      </div>   
+    <!-- flechas del banner -->
+    <a href="#">
+        <img src="https://i.ibb.co/C8HNjZz/rw-apagado.png" class="atras" onclick="cambioSlide(-1)" alt="flecha_atras" id="rwd-arrow">            
+    </a>
+    <a href="#">
+        <img src="https://i.ibb.co/sqd5jtd/menu-fw-apagado.png" class="adelante" onclick="cambioSlide(1)" alt="flecha_adelante" id="fwd-arrow">
+    </a>
+</div>
+<br>
+<!-- bolitas del banner -->
+<div style="text-align:center">
+    <span class="bolita" onclick="slideActual(1)"></span>
+    <span class="bolita" onclick="slideActual(2)"></span>
+    <span class="bolita" onclick="slideActual(3)"></span>
+    <span class="bolita" onclick="slideActual(4)"></span>
+</div>
+
+<!-- scripts -->
+<script src="./banner.js"></script>
+</body>
+</html>

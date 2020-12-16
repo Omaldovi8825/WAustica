@@ -1,0 +1,96 @@
+.slides {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.banner .diapos {
+    width: 100%;
+}
+
+/* contenedor del banner */
+.banner {
+  max-width: 1000px;
+  height: 220px;
+  position: relative;
+  margin: auto;
+ 
+}
+
+/* botones adelante / atras */
+.atras, .adelante {
+  width: 8%;  
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  /* transition: 0.6s ease; */
+  user-select: none;
+}
+
+/* Posicion del boton adelante */
+.adelante {
+  right: 0;
+  transform: translate(112%, -50%);
+}
+
+.atras {
+  transform: translate(-112%, -50%);
+}
+
+/* botones:hover aumntar su tamanio */
+.atras:hover, .adelante:hover {
+  width: 9%;
+}
+
+
+/* bolitas indicadoras */
+.bolita {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .bolita:hover {
+  background-color: #717171;
+}
+
+/* animacion Fading */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width:1300px){
+  .atras {
+    transform: rotate(90deg) translate(-50%, -2%);
+  }
+
+  .adelante {
+    transform: rotate(-90deg) translate(50%, 2%);
+  }
+
+}
+
+@media only screen and (max-width:500px){
+  .banner {
+    height: 140px;
+  }
+}

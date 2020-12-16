@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consola</title>
+    <link rel="stylesheet" href="./consola1.css">
+    <link rel="stylesheet" href="../../css/banner.css">
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+</head>
+<body>
+    <!-- menu consola -->
+    <div class="consolota">
+        <img class="consola-dj" src="https://i.ibb.co/16wzWGp/Index-Consola-Mesa-de-trabajo-1.png" alt="consola-dj">
+        <img class="consola-dj-celular" src="https://i.ibb.co/cbFbf4T/menu-celular.png" alt="consola-dj">
+        <!-- Banner -->
+        <div class="banner">
+            <div class="slides fade">
+                <img class="diapos" src="https://i.ibb.co/h70gwXd/pexels-isabella-mendes-860707.jpg">
+              </div>
+              <div class="slides fade">
+                <img class="diapos" src="https://i.ibb.co/zs1tHxP/pexels-pixabay-417458.jpg">
+              </div>            
+              <div class="slides fade">
+                <img class="diapos" src="https://images.pexels.com/photos/63703/pexels-photo-63703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+              </div>
+              <div class="slides fade">
+                  <img class="diapos" src="https://i.ibb.co/SfggFtv/bocinas.png">
+              </div>   
+            <!-- flechas del banner -->
+            <a href="#">
+                <img src="https://i.ibb.co/jGtMFxf/rw-apagado.png" class="atras" onclick="cambioSlide(-1, leftDisco)" alt="flecha_atras" id="rwd-arrow">            
+            </a>
+            <a href="#">
+                <img src="https://i.ibb.co/FWwfVRn/fw-apagado.png" class="adelante" onclick="cambioSlide(1, rigthDisco)" alt="flecha_adelante" id="fwd-arrow">
+            </a>
+            <!-- bolitas del banner -->
+            <div class="bolitas-container">
+                <span class="bolita" onclick="slideActual(1)"></span>
+                <span class="bolita" onclick="slideActual(2)"></span>
+                <span class="bolita" onclick="slideActual(3)"></span>
+                <span class="bolita" onclick="slideActual(4)"></span>
+            </div>
+        </div>
+        <!-- Menu -->
+        <div class="menu-container">
+            <a href="#"><div class="menu-item audio">
+                <span>AUDIO</span>
+            </div></a>
+            <a href="#"><div class="menu-item video">
+                <span>VIDEO</span>
+            </div></a>
+            <a href="#"><div class="menu-item iluminacion">
+                <span>LUCES</span>
+            </div></a>
+            <a href="#"><div class="menu-item dj">
+                <span>DJ</span>
+            </div></a>
+        </div>
+        <!-- Menu para celular -->
+        <div class="menu-container-cel">
+            <a href="#"><div class="menu-item-cel audio">
+                <span>AUDIO</span>
+            </div></a>
+            <a href="#"><div class="menu-item-cel video">
+                <span>VIDEO</span>
+            </div></a>
+            <a href="#"><div class="menu-item-cel iluminacion">
+                <span>LUCES</span>
+            </div></a>
+            <a href="#"><div class="menu-item-cel dj">
+                <span>DJ</span>
+            </div></a>
+        </div>
+        <!-- Discos -->
+        <img src="https://i.ibb.co/qygQBDK/discoo.png"  class="disc disc-left" alt="disco_consola" id="left-disc">
+        <img src="https://i.ibb.co/qygQBDK/discoo.png" class="disc disc-rigth" alt="disco_consola" id="right-disc">
+        <!-- Palanquita -->
+        <input class="palanquita" type="range">
+    </div>
+    
+    <script src="../../js/banner.js"></script>
+    <script src="./consola1.js"></script>
+</body>
+</html>

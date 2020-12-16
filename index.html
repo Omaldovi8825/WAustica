@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAcustica</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/menuConsola.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/cotizacion.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./css/redes.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <img src="https://i.ibb.co/54hH0RC/logo1.png" alt="">
+    </header>
+
+    <div class="separacion"></div>
+
+    <!-- Consola con menu -->
+    <!-- menu consola -->
+    <div class="consolota">
+        <img class="consola-dj" src="https://i.ibb.co/16wzWGp/Index-Consola-Mesa-de-trabajo-1.png" alt="consola-dj">
+        <img class="consola-dj-celular" src="https://i.ibb.co/cbFbf4T/menu-celular.png" alt="consola-dj">
+        <!-- Banner -->
+        <div class="banner">
+            <div class="slides fade">
+                <img class="diapos" src="https://i.ibb.co/h70gwXd/pexels-isabella-mendes-860707.jpg">
+              </div>
+              <div class="slides fade">
+                <img class="diapos" src="https://i.ibb.co/zs1tHxP/pexels-pixabay-417458.jpg">
+              </div>            
+              <div class="slides fade">
+                <img class="diapos" src="https://images.pexels.com/photos/63703/pexels-photo-63703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+              </div>
+              <div class="slides fade">
+                  <img class="diapos" src="https://i.ibb.co/SfggFtv/bocinas.png">
+              </div>   
+            <!-- flechas del banner -->
+            <a href="#">
+                <img src="https://i.ibb.co/jGtMFxf/rw-apagado.png" class="atras" onclick="cambioSlide(-1, leftDisco)" alt="flecha_atras" id="rwd-arrow">            
+            </a>
+            <a href="#">
+                <img src="https://i.ibb.co/FWwfVRn/fw-apagado.png" class="adelante" onclick="cambioSlide(1, rigthDisco)" alt="flecha_adelante" id="fwd-arrow">
+            </a>
+            <!-- bolitas del banner -->
+            <div class="bolitas-container">
+                <span class="bolita" onclick="slideActual(1)"></span>
+                <span class="bolita" onclick="slideActual(2)"></span>
+                <span class="bolita" onclick="slideActual(3)"></span>
+                <span class="bolita" onclick="slideActual(4)"></span>
+            </div>
+        </div>
+        <!-- Menu -->
+        <div class="menu-container">
+            <a href="#"><div class="menu-item audio">
+                <span>AUDIO</span>
+            </div></a>
+            <a href="#"><div class="menu-item video">
+                <span>VIDEO</span>
+            </div></a>
+            <a href="#"><div class="menu-item iluminacion">
+                <span>LUCES</span>
+            </div></a>
+            <a href="#"><div class="menu-item dj">
+                <span>DJ</span>
+            </div></a>
+        </div>
+        <!-- Menu para celular -->
+        <div class="menu-container-cel">
+            <a href="#"><div class="menu-item-cel audio">
+                <span>AUDIO</span>
+            </div></a>
+            <a href="#"><div class="menu-item-cel video">
+                <span>VIDEO</span>
+            </div></a>
+            <a href="#"><div class="menu-item-cel iluminacion">
+                <span>LUCES</span>
+            </div></a>
+            <a href="#"><div class="menu-item-cel dj">
+                <span>DJ</span>
+            </div></a>
+        </div>
+        <!-- Discos -->
+        <img src="https://i.ibb.co/qygQBDK/discoo.png"  class="disc disc-left" alt="disco_consola" id="left-disc">
+        <img src="https://i.ibb.co/qygQBDK/discoo.png" class="disc disc-rigth" alt="disco_consola" id="right-disc">
+        <!-- Palanquita -->
+        <input class="palanquita" type="range">
+    </div>
+
+    <!-- Cotizacion -->
+    <!-- boton cotizacion para celular -->
+    <img class="cotiza-cel" src="https://i.ibb.co/k9KHx3Z/cotizadorado.png" alt="" onclick="abrirModal()">
+
+    <!-- boton para modal cotizacion -->
+    <img src="https://i.ibb.co/k9KHx3Z/cotizadorado.png" class="cotiza" onclick="abrirModal()">
+
+    <!-- modal cotizacion -->
+    <div class="falso-modal" id="fake-modal" onclick="cerrarModal()"></div>
+    <div class="cotizacion" id="cotiza">
+        <img class="consola" src="https://i.ibb.co/nPsNKPm/consola-land.png" alt="" onclick="cerrarModal()">
+        <img class="consola-cel" src="https://i.ibb.co/ws8PxWV/consola-cel.png" alt="" onclick="cerrarModal()">
+        <form action="">
+            <h1>CONTACTO</h1>
+            <label for="nombre">NOMBRE COMPLETO</label>
+            <input type="text" name="nombre" id="">
+            <label for="mail">CORREO ELECTRÓNICO</label>
+            <input type="email" name="mail" id="">
+            <label for="message">MENSAJE</label>
+            <textarea name="message" id=""></textarea>
+        </form>  
+        <img class="disco" id="disco" src="https://i.ibb.co/qygQBDK/discoo.png" alt="" onclick="cerrarModal()"> 
+        <!-- aguja landscape -->
+        <img class="aguja-lscape" id="aguja" src="https://i.ibb.co/VmTtRxN/agujaderecha-aguja.png" alt="">
+        <!-- aguja cel -->
+        <img class="aguja-lscape-cel" id="aguja-cel" src="https://i.ibb.co/VmTtRxN/agujaderecha-aguja.png" alt="">        
+        <!-- submit button landscape -->
+        <button class="sbmt-btn" type="button" onclick="girarDisco()">SUBMIT</button>
+        <!-- submit button para cel -->
+        <button class="sbmt-btn-cel" type="button" onclick="girarDiscoCel()">SUBMIT</button>
+        <input class="barra barra-funcional" type="range" min="50" max="500" id="barra1">  
+        <input class="barra barra-juguete" type="range">
+        <div class="notita">
+            <p>Personas: <span id="numero-personas"></span></p>
+        </div>  
+    </div>
+
+    <!-- Redes -->
+    <!-- redes -->
+    <img class="sm" src="https://i.ibb.co/f9tvsRS/contadorado.png" alt="" onclick="showMedia()">
+    <a href="#"><img class="sm-button" src="https://i.ibb.co/Fmtkfcb/whatsdorado.png" alt=""></a>
+    <a href=""><img class="sm-button" src="https://i.ibb.co/pLn4wph/youtubedorado.png" alt=""></a>
+    <a href=""><img class="sm-button" src="https://i.ibb.co/YPkN98s/instadorado.png" alt=""></a>
+    <a href=""><img class="sm-button" src="https://i.ibb.co/Yc0m8NZ/facedorado.png" alt=""></a>
+
+    <!-- Redes celular -->
+    <div class="sm-cel">
+        <a href="#"><img src="https://i.ibb.co/Fmtkfcb/whatsdorado.png" alt=""></a>
+        <a href="#"><img src="https://i.ibb.co/pLn4wph/youtubedorado.png" alt=""></a>
+        <a href="#"><img src="https://i.ibb.co/YPkN98s/instadorado.png" alt=""></a>
+        <a href="#"><img src="https://i.ibb.co/Yc0m8NZ/facedorado.png" alt=""></a>
+    </div>
+
+    <!-- scripts -->
+    <script src="./js/banner.js"></script>
+    <script src="./js/menuConsola.js"></script>
+    <script src="./js/cotizacion.js"></script>
+    <script src="./js/redes.js"></script>
+</body>
+</html>
