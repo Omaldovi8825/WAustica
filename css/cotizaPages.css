@@ -197,7 +197,7 @@
       position: absolute;
       left: 22%;
       bottom: 26%;
-      width: 18%;
+      width: 20%;
       background-color: #ffff00d1;
       color: black;
       display: none;
@@ -317,7 +317,7 @@
       }
 
       .notita {
-        width: 45%;
+        width: 47%;
         bottom: 41%;
         left: 50%;
         transform: translateX(-50%);
