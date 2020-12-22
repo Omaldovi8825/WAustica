@@ -4,10 +4,19 @@
 
 body {
     margin: 0;
-    background: linear-gradient(65deg, rgb(100, 99, 99), rgb(223, 222, 222),rgb(158, 157, 157),rgb(129, 129, 129));
-    height: 100vh;
+    background: linear-gradient(65deg, #646363, #dfdede,#9e9d9d,#818181);
+    /* height: 100vh; */
 }
 
-.separacion {
-    height: 30px;
+main {
+    height: calc(100vh - 130px);
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width:700px) {
+    main {
+        height: unset;
+        padding-top: 30px;
+    }
 }

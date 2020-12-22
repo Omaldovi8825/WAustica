@@ -210,9 +210,7 @@
     .cotiza-cel {
         width: 84px;
         display: none;
-        /* margin: auto;
-        margin-top: 30px;
-        margin-bottom: 30px; */
+        margin: 30px auto;
       }
   
     @media only screen and (max-width:1200px){
@@ -242,17 +240,18 @@
         font-size: 1.2vw;
       }
     }
+
+    @media only screen and (max-width:900px){
+        .cotiza-cel {
+            display: block;
+          }
     
-    @media only screen and (max-width:560px){
-
-      .cotiza-cel {
-        display: block;
-      }
-
-      .cotiza {
-          display: none;
-      }
-      
+          .cotiza {
+              display: none;
+          }
+    }
+    
+    @media only screen and (max-width:560px){      
       .consola {
         display: none;
       }

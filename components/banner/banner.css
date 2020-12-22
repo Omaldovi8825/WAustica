@@ -5,17 +5,17 @@
     overflow: hidden;
 }
 
-.banner .diapos {
+.diapos {
     width: 100%;
 }
 
 /* contenedor del banner */
 .banner {
-  max-width: 1000px;
+  width: 50%;
   height: 220px;
   position: relative;
   margin: auto;
- 
+  box-shadow: 0px 0px 10px #7dbfe6
 }
 
 /* botones adelante / atras */
@@ -43,21 +43,29 @@
   width: 9%;
 }
 
+.bolitas-container {
+  display: flex;
+  border: 1px solid blue;
+  position: absolute;
+  bottom: -16%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 /* bolitas indicadoras */
 .bolita {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
-  background-color: white;
+  margin: 0 10px;
+  background-color: #3a3541;
   border-radius: 50%;
-  display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .bolita:hover {
-  background-color: #717171;
+  background-color: #d6e0d1;
+  box-shadow: 0px 0px 20px #62f80b;
 }
 
 /* animacion Fading */

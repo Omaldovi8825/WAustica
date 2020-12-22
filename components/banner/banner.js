@@ -9,7 +9,7 @@ rwdArrow.onmouseover = function() {
 }
 
 rwdArrow.onmouseout = function() {
-  this.src = 'https://i.ibb.co/C8HNjZz/rw-apagado.png'
+  this.src = 'https://i.ibb.co/jGtMFxf/rw-apagado.png'
 }
 
 fwdArrow.onmouseover = function() {
@@ -17,7 +17,7 @@ fwdArrow.onmouseover = function() {
 }
 
 fwdArrow.onmouseout = function() {
-  this.src = 'https://i.ibb.co/sqd5jtd/menu-fw-apagado.png'
+  this.src = 'https://i.ibb.co/FWwfVRn/fw-apagado.png'
 }
 
 function cambioSlide(n) {

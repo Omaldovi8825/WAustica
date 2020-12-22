@@ -5,8 +5,8 @@ var personas = document.getElementById('numero-personas')
 var notita = document.getElementsByClassName('notita')
 
 function abrirModal(){
-  modal.style.display = 'unset'
-  falsomodal.style.display = 'unset'
+  modal.style.display = 'block'
+  falsomodal.style.display = 'block'
   barra.value = '50'
   personas.innerHTML = barra.value
   barra.oninput = () => {

@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(65deg, rgb(100, 99, 99), rgb(223, 222, 222),rgb(158, 157, 157),rgb(129, 129, 129));
+    /* height: 100vh; */
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: calc(100vh - 130px);
+}
+
+@media only screen and (max-width:900px){
+    main {
+        display: unset;
+        min-height: unset;
+    }
+}

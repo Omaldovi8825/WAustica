@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>screen</title>
+    <link rel="stylesheet" href="./screen.css">
+    <link rel="stylesheet" href="./bannerPages.css">
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- imagen de fondo para portrait -->
+        <img class="placa" src="https://i.ibb.co/r6SmwH6/submenu-landscape.png" alt="imagen de fondo pantalla">
+        <!-- imagen de fondo para cel -->
+        <img class="placa-cel" src="https://i.ibb.co/dfp1w0g/submenu-portrait.png" alt="imagen de fondo pantalla">
+        <!-- Banner -->
+        <div class="banner">
+            <div class="slides fade">
+                <img class="diapos" src="https://i.ibb.co/28xpDsg/s1.png">
+            </div>
+            <div class="slides fade">
+                <img class="diapos" src="https://i.ibb.co/SwzxWvx/s3.jpg">
+            </div>            
+            <div class="slides fade">
+                <img class="diapos" src="https://i.ibb.co/HChLgHG/s2.jpg">
+            </div>
+            <div class="slides fade">
+                <img class="diapos" src="https://i.ibb.co/2vjM6bf/s4.jpg">
+            </div>   
+            <!-- flechas del banner -->
+            <a>
+                <img src="https://i.ibb.co/jGtMFxf/rw-apagado.png" class="atras" onclick="cambioSlide(-1)" alt="flecha_atras" id="rwd-arrow">            
+            </a>
+            <a>
+                <img src="https://i.ibb.co/FWwfVRn/fw-apagado.png" class="adelante" onclick="cambioSlide(1)" alt="flecha_adelante" id="fwd-arrow">
+            </a>
+            <!-- bolitas del banner -->
+            <div class="bolitas-container">
+                <span class="bolita" onclick="slideActual(1)"></span>
+                <span class="bolita" onclick="slideActual(2)"></span>
+                <span class="bolita" onclick="slideActual(3)"></span>
+                <span class="bolita" onclick="slideActual(4)"></span>
+            </div>
+        </div>
+        <!-- screen -->
+        <div class="screen-container">
+            <div class="screen">
+                <div class="screen-divisions screen-img">
+                    <img src="https://i.ibb.co/jvM3LNT/cuadr6.png" alt="imagen paquetes" id="imagen">
+                </div>
+                <div class="screen-divisions paquetes">
+                    <h1>Paquete: <span class="content">Basico</span></h1>
+                    <p>Personas: <span class="content">50 a 100</span></p>
+                    <p>Bocinas: <span class="content">4</span></p>
+                    <p>Subwoofer: <span class="content">1</span></p>
+                    <p>Precio: $<span class="content">1500</span></p>
+                </div>
+            </div>
+            <!-- botones de opciones -->
+            <div class="options-container">
+                <button type="button" class="options" onclick="changeContent('basic', '50 a 100', '4', '1', '1500', 'https://i.ibb.co/jvM3LNT/cuadr6.png')">Basic</button>
+                <button type="button" class="options" onclick="changeContent('med', '101 a 200', '6', '2', '2500', 'https://i.ibb.co/mydHmkf/cuadr4.png')">Med</button>
+                <button type="button" class="options" onclick="changeContent('pro', '201 a 400', '8', '3', '4000', 'https://i.ibb.co/YTqrxRP/cuadr1.png')">Pro</button>
+                <button type="button" class="options" onclick="changeContent('pro+', '401 a 600', '12', '5', '6500', 'https://i.ibb.co/JHJgSXt/audio1.png')">Pro+</button>
+                <button type="button" class="options" onclick="changeContent('vip', '601 a 1000', '16', '8', '9500', 'https://i.ibb.co/PZvM5wH/cuadr2.png')">VIP</button>
+            </div>
+        </div>
+    </div>
+        
+    <!-- scripts -->
+    <script src="../banner/banner.js"></script>
+    <script src="./screen.js"></script>
+</body>
+</html>

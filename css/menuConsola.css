@@ -1,9 +1,8 @@
 .consolota {
     max-width: 1000px;
     /* border: 1px solid red; */
-    display: block;
-    margin: auto;
     position: relative;
+    margin: auto;
 }
 
 .consola-dj {
